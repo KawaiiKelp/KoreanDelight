@@ -1,4 +1,4 @@
-package kr.kro.kelp.koreandelight.ModItems
+package kr.kro.kelp.koreandelight.item
 
 import net.minecraft.world.effect.MobEffectInstance
 import net.minecraft.world.food.FoodProperties

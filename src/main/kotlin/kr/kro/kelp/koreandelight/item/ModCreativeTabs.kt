@@ -1,4 +1,4 @@
-package kr.kro.kelp.koreandelight.ModItems
+package kr.kro.kelp.koreandelight.item
 
 import kr.kro.kelp.koreandelight.KoreanDelight
 import kr.kro.kelp.koreandelight.KoreanDelight.ID

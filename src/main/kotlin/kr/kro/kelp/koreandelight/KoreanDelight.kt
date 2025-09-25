@@ -1,11 +1,11 @@
 package kr.kro.kelp.koreandelight
 
-import kr.kro.kelp.koreandelight.ModItems.ModCreativeTabs
-import kr.kro.kelp.koreandelight.ModItems.ModItems
-import kr.kro.kelp.koreandelight.ModBlocks.ModBlocks
+import kr.kro.kelp.koreandelight.item.ModCreativeTabs
+import kr.kro.kelp.koreandelight.item.ModItems
+import kr.kro.kelp.koreandelight.block.ModBlocks
+import kr.kro.kelp.koreandelight.component.ModDataComponents
 import net.minecraft.client.Minecraft
 import net.neoforged.bus.api.SubscribeEvent
-import net.neoforged.fml.common.EventBusSubscriber
 import net.neoforged.fml.common.Mod
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent
@@ -32,9 +32,13 @@ object KoreanDelight {
         LOGGER.log(Level.INFO, "Hello world!")
 
         // Register the KDeferredRegister to the mod-specific event bus
+        ModCreativeTabs.CREATIVE_MODE_TAB.register(MOD_BUS)
+
         ModBlocks.BLOCKS.register(MOD_BUS)
         ModItems.ITEMS.register(MOD_BUS)
-        ModCreativeTabs.CREATIVE_MODE_TAB.register(MOD_BUS)
+
+        ModDataComponents.DATA_COMPONENT_TYPES.register(MOD_BUS);
+
 
         val obj = runForDist(clientTarget = {
             MOD_BUS.addListener(::onClientSetup)

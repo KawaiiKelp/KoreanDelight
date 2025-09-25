@@ -1,7 +1,7 @@
-package kr.kro.kelp.koreandelight.ModItems
+package kr.kro.kelp.koreandelight.item
 
 import kr.kro.kelp.koreandelight.KoreanDelight
-import kr.kro.kelp.koreandelight.ModBlocks.ModBlocks
+import kr.kro.kelp.koreandelight.block.ModBlocks
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemNameBlockItem
 import net.neoforged.neoforge.registries.DeferredItem
@@ -21,7 +21,7 @@ object ModItems {
     val CHILI_PEPPER_SEEDS: DeferredItem<Item> =
         ITEMS.registerItem("chili_pepper_seeds") {
             ItemNameBlockItem(
-                ModBlocks.CHILI_PEPPER.get(), // 여기서 get()은 괜찮음, 실행 시점은 '등록 이벤트'니까
+                ModBlocks.CHILI_PEPPER_CROP.get(), // 여기서 get()은 괜찮음, 실행 시점은 '등록 이벤트'니까
                 Item.Properties()
             )
         }
