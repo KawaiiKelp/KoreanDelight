@@ -2,14 +2,21 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "koreandelight:pepper"
+      "item": "koreandelight:chili_pepper"
     }
   ],
   "result": [
     {
       "item": {
         "count": 2,
-        "id": "koreandelight:pepper_dust"
+        "id": "koreandelight:chili_powder"
+      }
+    },
+    {
+      "chance": 0.3,
+      "item": {
+        "count": 1,
+        "id": "koreandelight:chili_powder"
       }
     }
   ],

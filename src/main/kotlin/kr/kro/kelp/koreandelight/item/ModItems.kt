@@ -21,11 +21,11 @@ object ModItems {
     val CHILI_PEPPER_SEEDS: DeferredItem<Item> =
         ITEMS.registerItem("chili_pepper_seeds") {
             ItemNameBlockItem(
-                ModBlocks.CHILI_PEPPER_CROP.get(), // 여기서 get()은 괜찮음, 실행 시점은 '등록 이벤트'니까
+                ModBlocks.CHILI_PEPPER_CROP.get(),
                 Item.Properties()
             )
         }
 
     val CHILI_POWDER: DeferredItem<Item> = ITEMS.registerSimpleItem("chili_powder",
-        Item.Properties().food(ModFoods.CHILI_POWDER))
+        Item.Properties())
 }

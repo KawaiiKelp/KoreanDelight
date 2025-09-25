@@ -14,8 +14,8 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper
 
 class ModBlockStateProvider(output: PackOutput?, exFileHelper: ExistingFileHelper?) :
     BlockStateProvider(output!!, KoreanDelight.ID, exFileHelper!!) {
-    protected override fun registerStatesAndModels() {
-        makeCrop((ModBlocks.CHILI_PEPPER_CROP.get() as CropBlock), "radish_crop_stage", "radish_crop_stage")
+        override fun registerStatesAndModels() {
+        makeCrop((ModBlocks.CHILI_PEPPER_CROP.get() as CropBlock), "chili_pepper_stage", "chili_pepper_stage")
     }
 
     fun makeCrop(block: CropBlock, modelName: String?, textureName: String?) {
@@ -31,14 +31,14 @@ class ModBlockStateProvider(output: PackOutput?, exFileHelper: ExistingFileHelpe
         block: CropBlock,
         modelName: String,
         textureName: String
-    ): Array<ConfiguredModel> {   // <- 여기서 ? 제거
+    ): Array<ConfiguredModel> {
         val models = arrayOf(
             ConfiguredModel(
                 models().crop(
                     modelName + state.getValue((block as ChiliPepperCropBlock).getAgeProperty()),
                     ResourceLocation.fromNamespaceAndPath(
                         KoreanDelight.ID,
-                        "block/" + textureName + state.getValue((block as ChiliPepperCropBlock).getAgeProperty())
+                        "block/" + textureName + state.getValue((block).getAgeProperty())
                     )
                 ).renderType("cutout")
             )

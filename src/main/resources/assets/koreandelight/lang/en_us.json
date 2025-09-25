@@ -1,6 +1,9 @@
 {
   "item.koreandelight.kimchi": "Kimchi",
   "item.koreandelight.bibimbap": "Bibimbap",
-  "item.koreandelight.chili_powder": "Chili Powder",
+  "item.koreandelight.chili_powder": "Chili Pepper Powder",
+  "item.koreandelight.chili_pepper": "Chili Pepper",
+  "item.koreandelight.chili_pepper_seeds": "Chili Pepper Seeds",
+  "block.koreandelight.chili_pepper_crop": "Chili Pepper Crop",
   "itemGroup.koreandelight": "Korean Delight"
 }

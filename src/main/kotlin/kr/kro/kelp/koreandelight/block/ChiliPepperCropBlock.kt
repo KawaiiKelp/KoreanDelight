@@ -20,7 +20,7 @@ class ChiliPepperCropBlock(properties: Properties) : CropBlock(properties) {
     }
 
     override fun getBaseSeedId(): ItemLike {
-        return ModItems.CHILI_PEPPER_SEEDS
+        return ModItems.CHILI_PEPPER_SEEDS.get()
     }
 
     public override fun getAgeProperty(): IntegerProperty {

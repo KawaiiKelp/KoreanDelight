@@ -4,6 +4,7 @@ import kr.kro.kelp.koreandelight.item.ModCreativeTabs
 import kr.kro.kelp.koreandelight.item.ModItems
 import kr.kro.kelp.koreandelight.block.ModBlocks
 import kr.kro.kelp.koreandelight.component.ModDataComponents
+import kr.kro.kelp.koreandelight.datagen.DataGenerators
 import net.minecraft.client.Minecraft
 import net.neoforged.bus.api.SubscribeEvent
 import net.neoforged.fml.common.Mod
@@ -37,8 +38,9 @@ object KoreanDelight {
         ModBlocks.BLOCKS.register(MOD_BUS)
         ModItems.ITEMS.register(MOD_BUS)
 
-        ModDataComponents.DATA_COMPONENT_TYPES.register(MOD_BUS);
+        ModDataComponents.DATA_COMPONENT_TYPES.register(MOD_BUS)
 
+        MOD_BUS.addListener(DataGenerators::gatherData)
 
         val obj = runForDist(clientTarget = {
             MOD_BUS.addListener(::onClientSetup)
