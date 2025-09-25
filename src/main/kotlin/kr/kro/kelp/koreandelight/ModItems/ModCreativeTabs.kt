@@ -22,6 +22,9 @@ object ModCreativeTabs {
                 .displayItems( { param, output ->
                     output.accept(ModItems.KIMCHI)
                     output.accept(ModItems.BIBIMBAP)
+                    output.accept(ModItems.CHILI_POWDER)
+                    output.accept(ModItems.CHILI_PEPPER)
+                    output.accept(ModItems.CHILI_PEPPER_SEEDS)
                 }).build()
         })
 

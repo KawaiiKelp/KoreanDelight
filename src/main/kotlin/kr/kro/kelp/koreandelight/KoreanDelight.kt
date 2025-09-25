@@ -2,6 +2,7 @@ package kr.kro.kelp.koreandelight
 
 import kr.kro.kelp.koreandelight.ModItems.ModCreativeTabs
 import kr.kro.kelp.koreandelight.ModItems.ModItems
+import kr.kro.kelp.koreandelight.ModBlocks.ModBlocks
 import net.minecraft.client.Minecraft
 import net.neoforged.bus.api.SubscribeEvent
 import net.neoforged.fml.common.EventBusSubscriber
@@ -31,6 +32,7 @@ object KoreanDelight {
         LOGGER.log(Level.INFO, "Hello world!")
 
         // Register the KDeferredRegister to the mod-specific event bus
+        ModBlocks.BLOCKS.register(MOD_BUS)
         ModItems.ITEMS.register(MOD_BUS)
         ModCreativeTabs.CREATIVE_MODE_TAB.register(MOD_BUS)
 

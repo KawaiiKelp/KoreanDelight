@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "koreandelight:item/kimchi"
+    "layer0": "koreandelight:item/chili_pepper"
   }
 }

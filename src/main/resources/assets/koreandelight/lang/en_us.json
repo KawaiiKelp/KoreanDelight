@@ -1,4 +1,6 @@
 {
   "item.koreandelight.kimchi": "Kimchi",
-  "item.koreandelight.bibimbap": "Bibimbap"
+  "item.koreandelight.bibimbap": "Bibimbap",
+  "item.koreandelight.chili_powder": "Chili Powder",
+  "itemGroup.koreandelight": "Korean Delight"
 }
