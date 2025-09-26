@@ -27,6 +27,8 @@ object ModCreativeTabs {
                     output.accept(ModItems.CHILI_PEPPER_SEEDS)
                     output.accept(ModItems.GARLIC)
                     output.accept(ModItems.GARLIC_BULB)
+                    output.accept(ModItems.CHOPPED_GARLIC)
+                    output.accept(ModItems.SALT)
                 }).build()
         })
 

@@ -4,6 +4,11 @@
   "item.koreandelight.chili_powder": "Chili Pepper Powder",
   "item.koreandelight.chili_pepper": "Chili Pepper",
   "item.koreandelight.chili_pepper_seeds": "Chili Pepper Seeds",
+  "item.koreandelight.garlic_bulb": "Garlic Bulb",
+  "item.koreandelight.garlic": "Garlic",
+  "item.koreandelight.chopped_garlic": "Chopped Garlic",
+  "item.koreandelight.salt": "Salt",
   "block.koreandelight.chili_pepper_crop": "Chili Pepper Crop",
+  "block.koreandelight.garlic_crop": "Garlic Crop",
   "itemGroup.koreandelight": "Korean Delight"
 }

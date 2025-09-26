@@ -1,6 +1,11 @@
-// 1.21.1	2025-09-26T08:55:38.993214	Block States: koreandelight
+// 1.21.1	2025-09-26T17:21:32.1935293	Block States: koreandelight
 2b567ad44d13454a3d6893bbc9f3f574e40c994f assets/koreandelight/blockstates/chili_pepper_crop.json
+f37b4f0676066e05e3c36c1e5977faeb2d030de2 assets/koreandelight/blockstates/garlic_crop.json
 79dc185c4e23c9bf8e3fd826f9b3f16ceb1483df assets/koreandelight/models/block/chili_pepper_stage0.json
 0611f90892b2d9e4947aee3d40ffbe074e84a2f0 assets/koreandelight/models/block/chili_pepper_stage1.json
 ef1e8b4ea5bdbc7f894e2146c150cb25c3fc28bf assets/koreandelight/models/block/chili_pepper_stage2.json
 d22ab55f64fc109ad5cd90cf5b3d6d99d0c8fbc5 assets/koreandelight/models/block/chili_pepper_stage3.json
+0006d00bbe804db10946af76d94f30aa233c65c2 assets/koreandelight/models/block/garlic_stage0.json
+0d4dbdc671a8e1f10acb40e96f91c56911aa5b8c assets/koreandelight/models/block/garlic_stage1.json
+35882f0293755f210c1f74396164503d83857965 assets/koreandelight/models/block/garlic_stage2.json
+5eace5359c6917b3be5a22eee1782231b5e84fe6 assets/koreandelight/models/block/garlic_stage3.json

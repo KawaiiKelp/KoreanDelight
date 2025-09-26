@@ -34,13 +34,18 @@ class ModBlockStateProvider(output: PackOutput?, exFileHelper: ExistingFileHelpe
         modelName: String,
         textureName: String
     ): Array<ConfiguredModel> {
+        val age = when(block) {
+            is ChiliPepperCropBlock -> state.getValue(block.myAgeProperty)
+            is GarlicCropBlock -> state.getValue(block.myAgeProperty)
+            else -> throw IllegalArgumentException("Unsupported crop block: ${block::class.simpleName}")
+        }
         val models = arrayOf(
             ConfiguredModel(
                 models().crop(
-                    modelName + state.getValue((block as GarlicCropBlock).ageProperty),
+                    modelName + age,
                     ResourceLocation.fromNamespaceAndPath(
                         KoreanDelight.ID,
-                        "block/" + textureName + state.getValue((block).ageProperty)
+                        "block/" + textureName + age
                     )
                 ).renderType("cutout")
             )

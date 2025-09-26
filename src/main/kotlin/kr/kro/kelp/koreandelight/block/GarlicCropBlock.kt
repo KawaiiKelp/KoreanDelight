@@ -15,6 +15,8 @@ import net.minecraft.world.phys.shapes.VoxelShape
 
 
 class GarlicCropBlock(properties: Properties) : CropBlock(properties) {
+    val myAgeProperty = AGE
+
     override fun getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape {
         return SHAPE_BY_AGE[state.getValue(AGE)]
     }

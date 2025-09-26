@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "farmersdelight:cabbage_leaf"
+    },
+    {
+      "item": "koreandelight:chili_powder"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "koreandelight:salt"
+    },
+    {
+      "item": "koreandelight:chopped_garlic"
+    }
+  ],
+  "result": {
+    "id": "koreandelight:kimchi",
+    "count": 2
+  }
+}

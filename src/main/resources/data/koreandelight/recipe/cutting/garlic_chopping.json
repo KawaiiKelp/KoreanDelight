@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "koreandelight:garlic"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "koreandelight:chopped_garlic"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "koreandelight:chopped_garlic"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

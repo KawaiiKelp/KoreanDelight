@@ -40,4 +40,10 @@ object ModItems {
 
     val CHILI_POWDER: DeferredItem<Item> = ITEMS.registerSimpleItem("chili_powder",
         Item.Properties())
+
+    val CHOPPED_GARLIC: DeferredItem<Item> = ITEMS.registerSimpleItem("chopped_garlic",
+        Item.Properties())
+
+    val SALT: DeferredItem<Item> = ITEMS.registerSimpleItem("salt",
+        Item.Properties())
 }
