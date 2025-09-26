@@ -2,6 +2,7 @@ package kr.kro.kelp.koreandelight.datagen
 
 import kr.kro.kelp.koreandelight.KoreanDelight
 import kr.kro.kelp.koreandelight.block.ChiliPepperCropBlock
+import kr.kro.kelp.koreandelight.block.GarlicCropBlock
 import kr.kro.kelp.koreandelight.block.ModBlocks
 import net.minecraft.data.PackOutput
 import net.minecraft.resources.ResourceLocation
@@ -16,6 +17,7 @@ class ModBlockStateProvider(output: PackOutput?, exFileHelper: ExistingFileHelpe
     BlockStateProvider(output!!, KoreanDelight.ID, exFileHelper!!) {
         override fun registerStatesAndModels() {
         makeCrop((ModBlocks.CHILI_PEPPER_CROP.get() as CropBlock), "chili_pepper_stage", "chili_pepper_stage")
+        makeCrop((ModBlocks.GARLIC_CROP.get() as CropBlock), "garlic_stage", "garlic_stage")
     }
 
     fun makeCrop(block: CropBlock, modelName: String?, textureName: String?) {
@@ -35,10 +37,10 @@ class ModBlockStateProvider(output: PackOutput?, exFileHelper: ExistingFileHelpe
         val models = arrayOf(
             ConfiguredModel(
                 models().crop(
-                    modelName + state.getValue((block as ChiliPepperCropBlock).getAgeProperty()),
+                    modelName + state.getValue((block as GarlicCropBlock).ageProperty),
                     ResourceLocation.fromNamespaceAndPath(
                         KoreanDelight.ID,
-                        "block/" + textureName + state.getValue((block).getAgeProperty())
+                        "block/" + textureName + state.getValue((block).ageProperty)
                     )
                 ).renderType("cutout")
             )

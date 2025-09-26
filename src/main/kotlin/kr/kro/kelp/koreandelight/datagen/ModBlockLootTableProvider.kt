@@ -31,6 +31,12 @@ class ModBlockLootTableProvider(
                 ModItems.CHILI_PEPPER.get(), ModItems.CHILI_PEPPER_SEEDS.get(), lootItemConditionBuilder
             )
         )
+        this.add(
+            ModBlocks.GARLIC_CROP.get(), this.createCropDrops(
+                ModBlocks.GARLIC_CROP.get(),
+                ModItems.GARLIC_BULB.get(), ModItems.GARLIC.get(), lootItemConditionBuilder
+            )
+        )
     }
 
     override fun getKnownBlocks(): Iterable<Block> {

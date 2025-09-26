@@ -16,6 +16,7 @@ class ModItemModelProvider(
 ) : ItemModelProvider(output, KoreanDelight.ID, existingFileHelper) {
     override fun registerModels() {
         basicItem(ModItems.CHILI_PEPPER_SEEDS.get())
+        basicItem(ModItems.GARLIC.get())
     }
     private fun handheldItem(item: DeferredItem<*>): ItemModelBuilder {
         return withExistingParent(

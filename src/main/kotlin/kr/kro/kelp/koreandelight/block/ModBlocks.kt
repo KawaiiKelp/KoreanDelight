@@ -23,6 +23,10 @@ object ModBlocks {
         "chili_pepper_crop",
         Supplier<Block> { ChiliPepperCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)) })
 
+    val GARLIC_CROP: DeferredBlock<Block> = BLOCKS.register(
+        "garlic_crop",
+        Supplier<Block> { GarlicCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)) })
+
     private fun <T : Block?> registerBlock(name: String, block: Supplier<T>): DeferredBlock<T> {
         val toReturn = BLOCKS.register(name, block)
         registerBlockItem(name, toReturn)

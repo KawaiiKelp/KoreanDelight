@@ -26,6 +26,18 @@ object ModItems {
             )
         }
 
+    val GARLIC_BULB: DeferredItem<Item> = ITEMS.registerSimpleItem("garlic_bulb",
+        Item.Properties())
+
+    val GARLIC: DeferredItem<Item> =
+        ITEMS.registerItem("garlic") {
+            ItemNameBlockItem(
+                ModBlocks.GARLIC_CROP.get(),
+                Item.Properties().food(ModFoods.GARLIC)
+            )
+        }
+
+
     val CHILI_POWDER: DeferredItem<Item> = ITEMS.registerSimpleItem("chili_powder",
         Item.Properties())
 }

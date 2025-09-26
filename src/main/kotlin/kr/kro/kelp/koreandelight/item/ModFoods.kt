@@ -14,4 +14,6 @@ object ModFoods {
         .usingConvertsTo(Items.BOWL).build()
     val CHILI_PEPPER: FoodProperties = FoodProperties.Builder().nutrition(3).saturationModifier(0.1f).build()
 
+    val GARLIC: FoodProperties = FoodProperties.Builder().nutrition(3).saturationModifier(0.1f).build()
+
 }
